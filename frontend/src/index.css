@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+@media screen and (max-width:800px) {
+  .nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1122px){
+  .logo{
+    display: none;
+    
+  }
+  .searchBar{
+    min-width: 430px;
+  }
+}
+
+@media screen and (max-width:870px){
+  /* .category{
+visibility: hidden;
+  } */
+  .searchBar{
+    min-width: 300px;
+  } 
+}
+@media screen and (max-width:778px){
+  .logo{
+    display: none;
+  }
+}
+@media screen and (max-width:375px){
+  .log{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .newGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+
+/* ProductDetail.css */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+::-webkit-scrollbar{
+  display: none;
+}
